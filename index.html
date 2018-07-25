@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Savetheturtles-Homepage-Background.css">
+<link rel="stylesheet" href="Savetheturtles-Homepage-Tabs.css">
+  <title> Save The Turtles</title>
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1">
+
+    <style>
+
+h1 {
+  font-family:"Didot";
+}
+
+body{
+    font-family: Arial;
+    margin: 0px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    position:absolute;
+    display: none;
+    top:-250px;
+    left: 250px;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 1120px;
+    width: auto;
+    padding: 16px;
+    margin-top: -70px;
+    margin-left: -600px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    cursor: pointer;
+    position: absolute;
+    right: 250px;
+    top: 50px;
+    width: auto;
+    padding: 16px;
+    margin-top: -70px;
+    margin-right: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  </style>
+</head>
+<body>
+
+  <div id="Home" class="tabcontent">
+    <h1>Save The Turtles
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+      <font size = "4.5">
+      <p> Welcome to Save The Turtles! Our mission is to educate people about
+       marine pollution, while providing tips and opportunities to help clean up our oceans!</p>
+    </h1>
+  </div>
+  <div id="Facts" class="tabcontent">
+    <h1>Facts
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <div id ="Tips" class="tabcontent">
+    <h1>Tips
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <div id="Game" class="tabcontent">
+    <h1>Game
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <div id="Howtohelp" class="tabcontent">
+    <h1>How to Help
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <div id="Chat" class="tabcontent">
+    <h1>Chat
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <div id="Aboutus" class="tabcontent">
+    <h1>About Us
+    <img src="tur.png"
+    style="width:50px;height:50px;"></img></h1>
+  </div>
+  <a href="index.html">
+    <button class="tablink"  style="background-color:teal;" onclick="openTab('Home',this,
+    'teal')" id="defaultOpen">Home</button>
+  </a>
+  <a href="Savetheturtles-Facts.html">
+    <button class="tablink" onclick="openTab('Facts',this,
+    'teal')">Facts</button>
+  </a>
+  <a href="Savetheturtles-Tips.html">
+    <button class="tablink" onclick="openTab('Tips', this,
+    'teal')">Tips</button>
+  </a>
+  <a href="game.html">
+    <button class="tablink" onclick="openTab('Game', this,
+    'teal')">Game</button>
+  </a>
+  <a href="Savetheturtles-Help.html">
+    <button class="tablink" onclick="openTab('Howtohelp', this,
+    'teal')">How to Help</button>
+  </a>
+  <a href="Savetheturtles-Chat.html">
+    <button class="tablink" onclick="openTab('Chat', this,
+    'teal')">Chat</button>
+  </a>
+  <a href="Aboutus.html">
+    <button class="tablink" onclick="openTab('Aboutus', this,
+    'teal')">About Us</button>
+  </a>
+
+<div id="overlay"><img src="oceans.gif" alt="Be patient..." width = "1500" height = "1000" /></div>
+  <div class="container" style="text-align:center">
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="pollution.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="Seal.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="screamingseal.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="surf.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="rope.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="seagull.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="whale.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="plastic.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="turtle.jpg" style="width:950px;height:500px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="oilspill.jpg" style="width:950px;height:500px">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  <script src="Savetheturtles-Homepage-Tabs.js"></script>
+  <script>
+    openTab("Home", window, "teal")
+  </script>
+  </body>
+  </html>

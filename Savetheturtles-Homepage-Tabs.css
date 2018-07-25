@@ -1,0 +1,36 @@
+body{
+  margin: 0px;
+}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 17px;
+  width: 14.28%;
+  font-family: "Didot";
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Home {background-color: teal;}
+#Facts {background-color: teal;}
+#Tips {background-color: teal;}
+#Game {background-color: teal;}
+#Howtohelp {background-color:teal;}
+#Chat {background-color: teal;}
+#Aboutus {background-color: teal;}

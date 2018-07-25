@@ -1,0 +1,263 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <style>
+    {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev{
+      cursor: pointer;
+      position: absolute;
+      top: 320px;
+      right: 1030px;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      cursor: pointer;
+      position: absolute;
+      right: 400px;
+      top: 325px;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
+    <link rel="stylesheet" href="Savetheturtles-Help.css">
+    <link rel="stylesheet" href="Savetheturtles-Homepage-Tabs.css">
+    <script src = "Savetheturtles-Homepage-Tabs.js"></script>
+  </head>
+  <body>
+    <div id="Home" class="tabcontent">
+      <h1>Save The Turtles
+        <img src="tur.png"
+        style="width:50px;height:50px;"></img>
+      </h1>
+    </div>
+    <div id="Facts" class="tabcontent">
+      <h1>Facts
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <div id ="Tips" class="tabcontent">
+      <h1>Tips
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <div id="Game" class="tabcontent">
+      <h1>Game
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <div id="Howtohelp" style=“background-color:teal” class="tabcontent">
+      <h1>How to Help
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <div id="Chat" class="tabcontent">
+      <h1>Chat
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <div id="Aboutus" class="tabcontent">
+      <h1>About Us
+      <img src="tur.png"
+      style="width:50px;height:50px;"></img></h1>
+    </div>
+    <!-- buttons-->
+
+    <a href="index.html">
+      <button class="tablink" onclick="openTab('Home',this,
+      'teal')" id="defaultOpen">Home</button>
+    </a>
+    <a href="Savetheturtles-Facts.html">
+      <button class="tablink" onclick="openTab('Facts',this,
+      'teal')">Facts</button>
+    </a>
+    <a href="Savetheturtles-Tips.html">
+      <button class="tablink" onclick="openTab('Tips', this,
+      'teal')">Tips</button>
+    </a>
+    <a href="game.html">
+      <button class="tablink" onclick="openTab('Game', this,
+      'teal')">Game</button>
+    </a>
+    <a href="Savetheturtles-Help.html">
+      <button class="tablink" style = "background-color:teal" onclick="openTab('Howtohelp', this,
+      'teal')">How to Help</button>
+    </a>
+    <a href="Savetheturtles-Chat.html">
+      <button class="tablink" onclick="openTab('Chat', this,
+      'teal')">Chat</button>
+    </a>
+    <a href="Aboutus.html">
+      <button class="tablink" onclick="openTab('Aboutus', this,
+      'teal')">About Us</button>
+    </a>
+<h1> <br> How to Help </h1>
+    <div class="row">
+      <div class="column">Donate: <br>
+        <a href="https://www.theoceancleanup.com/fund/"> <br> Donate to The Ocean
+          Cleanup</a>
+        <a href="https://plasticoceans.org/donate/"> <br> <br> <br> Donate to Plastic
+        Oceans</a>
+        <a href="http://pacificabeachcoalition.org/donate/?gclid=CjwKCAjwhLHaBRAGEiwAHCgG3pfAK76ipWIvVp7Uko1pRODL76YZr8w7qBf9vXNl4xedAepU056RxoChEwQAvD_BwE"
+        > <br> <br> <br> Donate to the Pacific Beach Coalition </a>
+        <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Sea-Turtle.aspx?sc=AWY1705OQ18316A01275RX&_ga=2.184458278.1270587142.1532107715-2118784199.1532107715">
+          <br> <br> <br> Adopt a sea turtle </a>
+      </div>
+      <div class="column1"> Volunteer:<br>
+        <a href="https://oceanconservancy.org/trash-free-seas/international-coastal-cleanup/volunteer/">
+           <br> Volunteer with The Ocean Conservancy </a>
+        <a href="https://www.surfrider.org/volunteer?gclid=CjwKCAjwhLHaBRAGEiwAHCgG3jDUS8OOpDmlstr-tqUaYbMRFlOOAuYaIsWMmix3Qe5BvJb_winDPRoCAkMQAvD_BwE">
+          <br> <br> <br> Volunteer with Surf Rider </a>
+        <a href="http://www.oceanblueproject.org/beachcleanupevents.html">
+          <br> <br> <br> Volunteer with The Ocean Blue Project </a>
+        <a href="https://blueventures.org/volunteer/"> <br> <br> <br> Volunteer with Blue Ventures </a>
+      </div>
+    </div>
+
+    <h2>
+    <center>
+    <font color="white">
+    <font size="6">
+    <p style="font-family:'Didot;''">
+    <br><br> With your generous donations and contributions, you can help protect our oceans</h2><br><br>
+    </font>
+    </h2>
+
+
+    <div class="container" style="text-align:center">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="happyturtle.jpg" alt = "fdsafs" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="happyseal.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3/ 8</div>
+        <img src="happydolphins.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="oceanlife.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="happywaves.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="stingray.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="jellyfish.jpg" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="seahorse.jpg" style="width:60%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <script src="Savetheturtles-Help.js"></script>
+  <script>
+    openTab("Howtohelp", window, "teal")
+  </script>
+</body>
+</html>

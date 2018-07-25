@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  text: underline;
+  padding-top: 0px;
+  font-family: "Didot";
+  color: white;
+}
+#text {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Didot";
+  color: white;
+  margin-top: 30px;
+}
+body {
+  background-color: #00b0b3
+}
+
+.fact {
+  font-family: "Didot";
+  width:225px;
+  height: 225px;
+  margin: 10px;
+  margin-left: 30px;
+  display: inline-grid;
+  grid-align: center;
+  padding: 5px;
+  text-align: center;
+  background-color: #c4e7ed;
+  color: black;
+}
+
+.cover{
+  font-family: "Didot";
+  width: 225px;
+  height: 225px;
+  background-image: url("seaturtle.jpg")
+  margin: 10px;
+  margin-left: -249px;
+  display: inline-grid;
+  grid-align: center;
+  padding: 5px;
+  transition: opacity 1s;
+  margin-bottom: -215px;
+}
+
+.cover:hover {
+  opacity: 0;
+}
+#citations {
+  font-size: 10px;
+}
